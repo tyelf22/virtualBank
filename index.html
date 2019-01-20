@@ -6,14 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="mystyle.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
 </head>
 <body>
-    <h1>Virtual Bank</h1>
-    <input  id="amount" type="text" placeholder="Enter amount here..."/>
-    <button id="enter" onclick="calculate()">Enter</button>
-<br>
-    <p id="total">Account Total</p>
-
+    <container class="row">
+        <h1 class="text-primary text-center jumbotron">Virtual Bank</h1>
+        <input class="col-sm-2" id="amount" type="text" placeholder="Enter amount here..."/>
+        <button class="btn-primary col-sm-2" id="enter" onclick="calculate()">Enter</button>
+        <p class="col-sm-8" id="total">Account Total</p>
+    </container>
+ 
     <script
   src="https://code.jquery.com/jquery-3.3.1.min.js"
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
